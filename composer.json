@@ -1,6 +1,6 @@
 {
   "name": "stagem/zfc-cron",
-  "description": "ZF cron module based on",
+  "description": "ZF cron module based on https://github.com/yalesov/zf2-cron",
   "type": "zf-module",
   "license": "MIT",
   "keywords": [
