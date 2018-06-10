@@ -1,0 +1,36 @@
+{
+  "name": "stagem/zfc-cron",
+  "description": "ZF cron module based on",
+  "type": "zf-module",
+  "license": "MIT",
+  "keywords": [
+    "zf",
+    "cron"
+  ],
+  "authors": [
+    {
+      "name": "Vlad Kozak",
+      "email": "vlad.gem.typ@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Serhii Popov",
+      "email": "popow.serhii@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6 || ^7."
+  },
+  "autoload": {
+    "psr-4": {
+      "Stagem\\ZfcCron\\": "src/"
+    }
+  },
+  "extra": {
+    "zf": {
+      "config-provider": "Stagem\\ZfcCron\\ConfigProvider",
+      "component": "Stagem\\ZfcCron"
+    }
+  }
+}
