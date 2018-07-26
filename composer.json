@@ -5,6 +5,7 @@
   "license": "MIT",
   "keywords": [
     "zf",
+    "zf3",
     "cron"
   ],
   "authors": [
@@ -20,7 +21,8 @@
     }
   ],
   "require": {
-    "php": ">=5.6 || ^7."
+    "php": ">=5.6 || ^7.",
+    "yalesov/zf2-cron": "3.*"
   },
   "autoload": {
     "psr-4": {
