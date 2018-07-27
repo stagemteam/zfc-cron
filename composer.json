@@ -22,7 +22,7 @@
   ],
   "require": {
     "php": ">=5.6 || ^7.",
-    "yalesov/zf2-cron": "3.*"
+    "yalesov/zf2-cron": "dev-master"
   },
   "autoload": {
     "psr-4": {
