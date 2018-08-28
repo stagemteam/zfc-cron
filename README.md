@@ -31,11 +31,25 @@ return [
 ```
 
 ### Options
-**`callback`**
+
+#### **`alias`**
+
+Unique stringable code of cron Job. 
+By this code you can identify cron Job in log or somewhere else.
+
+#### **`frequency`**
+
+Cron schedule time. [Explanation](http://www.adminschoice.com/crontab-quick-reference)
+
+#### **`callback`**
 
 Any valid PHP callback. If callback passed as namespace notation and a method is not static 
 Cron will try to get the object through ServiceManager.
 
 > Notice. Static method usage is not preferable. Use ServiceManager for maximum flexibility.
+
+#### **`properties`**
+
+Additional properties which will be passed to `callback`
 
 Other option you can read [here](https://github.com/yalesov/zf2-cron).
