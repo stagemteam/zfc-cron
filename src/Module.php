@@ -42,7 +42,7 @@ class Module
             $alias = $job['alias'];
             $callback = $job['callback'];
             $frequency = $job['frequency'];
-            $properties = $job['properties'];
+            $properties = $job['properties'] ?? [];
 
             $callback = function() use ($container, $callback) {
                 if (is_string($callback) && strpos($callback, '::')) {
