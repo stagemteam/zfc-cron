@@ -49,11 +49,11 @@ class Module
                     list($class, $method) = explode('::', $callback);
                     $methodChecker = new ReflectionMethod($class, $method);
                     if ($methodChecker->isPublic() && !$methodChecker->isStatic()) {
-                        if (!$container->has($class)) {
-                            throw new InvalidArgumentException(sprintf(
-                                'Class "%s" does not exists and cannot be created with Service Manager', $class
-                            ));
-                        }
+                        #if (!$container->has($class)) {
+                        #    throw new InvalidArgumentException(sprintf(
+                        #        'Class "%s" does not exists and cannot be created with Service Manager', $class
+                        #    ));
+                        #}
                         $callback = [$container->get($class), $method];
                     }
                 }
